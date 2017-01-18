@@ -26,7 +26,12 @@ import threading
 import types
 import numbers
 import collections
-import resource
+resourceExists = True
+try:
+	import resource
+except Exception as e:
+	# print ( e )
+	resourceExists = False
 
 dateutil_exists = False
 try:
@@ -1008,8 +1013,9 @@ class Client:
 					osys["uname"] = os.uname()
 					proc = {}
 					info["process"] = proc
-
-					mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+					mem = 0
+					if resourceExists:
+						mem = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
 					proc["maxrss"] = mem
 				else:
 					e.setStatus ( 1, "error", "no " + e.getType() )
@@ -1753,7 +1759,7 @@ class MutableTimer:
 	def __init__(self,isDaemon=None):
 		self.maxperiod          = 24*3600
 		self.period             = self.maxperiod
-		self.isDaemon           = isDaemon == True
+		self.isDaemon           = isDaemon == False
 		self._lock              = threading.Lock()
 		self._runnerlock        = threading.Lock()
 		self._condition         = threading.Condition ( self._lock )

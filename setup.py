@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="gepard-python",
-    version="0.9",
+    version="1.0",
     install_requires=[
         "python-dateutil"
     ],
