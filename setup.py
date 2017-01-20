@@ -7,7 +7,7 @@ setup(
         "python-dateutil"
     ],
     author = 'Hans-Juergen Gessinger',
-    author_email = 'gessinger-hj@gmail.com',
+    author_email = 'gessinger.hj@gmail.com',
     url = 'https://github.com/paulgessinger/gepard-python',
     py_modules=['gepard'],
     entry_points= {
