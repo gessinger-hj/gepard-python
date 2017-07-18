@@ -1,13 +1,14 @@
 from setuptools import setup
 
 import os
-long_description = 'Add a fallback short description here'
+longdescription = 'Add a fallback short description here'
 if os.path.exists('README.rst'):
-    long_description = open('README.rst').read()
+    longdescription = open('README.rst').read()
 
 setup(
     name="gepard-python",
-    version="1.0.5",
+    version="1.0.19",
+    license='MIT',
     install_requires=[
         "python-dateutil"
     ],
@@ -17,18 +18,7 @@ setup(
     py_modules=['gepard'],
     entry_points= {
     },
-    keywords = [
-    "distributed-applications",
-    "events",
-    "semaphores",
-    "locks",
-    "messages",
-    "JavaScript",
-    "Java",
-    "Python",
-    "PHP",
-    "message"
-    ],
+    keywords = "distributed-applications events semaphores locks messages JavaScript Java Python PHP messages",
     description = "Python client for gepard:General purpose communications for distributed applications / Microservices / events, semaphores and messages for JavaScript, Java, Python and PHP",
-    longdescription = long_description
+    long_description = longdescription
 )
