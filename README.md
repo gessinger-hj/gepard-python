@@ -1,5 +1,4 @@
 # gepard-python
-<<<<<<< HEAD
 General purpose communication and synchronization layer for distributed applications / Microservices / events, semaphores, locks and messages for JavaScript, Java, Python and PHP
 
 <!-- MarkdownTOC -->
@@ -22,21 +21,13 @@ This is simply done by executing the command:
 Prerequisite for this command is the installation of node and npm.
 For more information see [gepard on npm](https://www.npmjs.com/package/gepard) and [gessinger-hj/gepard on github](https://github.com/gessinger-hj/gepard).
 
-If you are interested in the __PHP__ client see [pepard-php on packagist](https://pypi.python.org/pypi/gepard-python)
+If you are interested in the __PHP__ client see [pepard-python on pypi](https://pypi.python.org/pypi?name=gepard-python&:action=display) and [gepard-python on github](https://github.com/gessinger-hj/gepard-python)
 
 # Install
+
 
 Installation is done from __pypi__ with:
 
 ```sh
 pip install gepard-python
 ```
-=======
-This is the python client to connect to a gepard environment.
-This client is full featured as described in:
- [gepard](https://github.com/gessinger-hj/gepard)
- [gepard overview](https://github.com/gessinger-hj/gepard#overview)
- and
- [gepard examples](https://github.com/gessinger-hj/gepard#examples)
- All examples are expressed in Python, Java and JavaScript flavours.
->>>>>>> 538be005895e596c6671a147ee3f446274c79a0c
