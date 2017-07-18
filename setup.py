@@ -4,7 +4,7 @@ import os
 long_description = 'Add a fallback short description here'
 if os.path.exists('README.rst'):
     long_description = open('README.rst').read()
-print ( long_description)
+
 setup(
     name="gepard-python",
     version="1.0.5",
