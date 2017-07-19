@@ -1,4 +1,5 @@
 from setuptools import setup
+from glob import glob
 
 import os
 longdescription = 'Add a fallback short description here'
@@ -7,7 +8,7 @@ if os.path.exists('README.rst'):
 
 setup(
     name="gepard-python",
-    version="1.0.19",
+    version="1.0.21",
     license='MIT',
     install_requires=[
         "python-dateutil"
